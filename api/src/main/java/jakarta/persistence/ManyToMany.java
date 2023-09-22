@@ -141,7 +141,7 @@ public @interface ManyToMany {
      *
      * <p>If not specified, defaults to {@code LAZY}.
      */
-    FetchType fetch() default FetchType.EAGER;
+    FetchType fetch() default FetchType.LAZY;
 
     /** 
      * The field that owns the relationship. Required unless 
