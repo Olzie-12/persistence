@@ -119,7 +119,7 @@ public @interface OneToMany {
      * must be eagerly fetched.  The LAZY strategy is a hint to the
      * persistence provider runtime.
      */
-    FetchType fetch() default FetchType.LAZY;
+    FetchType fetch() default FetchType.EAGER;
 
     /** 
      * The field that owns the relationship. Required unless 
